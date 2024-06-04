@@ -66,7 +66,7 @@ class TodoController extends Controller
     {
         try {
             if ($todo) {
-                $todo->deleted;
+                $todo->delete();
                 return redirect()->route('todos.index')->with('success', 'Todo list deleted successfully!');
             }
             return back()->with('error', 'Todo list not found!');

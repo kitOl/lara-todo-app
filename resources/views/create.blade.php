@@ -4,7 +4,7 @@
 
 <div class="row">
     <div class="col-xl-6 col-lg-8 mx-auto">
-        <form action="{{ route('todos.story') }}" method="POST">
+        <form action="{{ route('todos.store') }}" method="POST">
         @csrf
         <div class="card">
             <div class="card-header">

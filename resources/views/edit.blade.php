@@ -33,6 +33,7 @@
 
                 <div class="form-group">
                     <button class="btn btn-success" type="submit"> Update </button>
+                    <a href="{{ route('todos.index') }}" class="btn btn-info"> Back </a>
                 </div>
             </div>
         </div>

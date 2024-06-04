@@ -56,10 +56,10 @@
                     <td>
                         <form action="{{ route('todos.destroy', $todo->id) }}" method="POST">
                         @csrf
-                        <a href="{{ route('todos.show') }}" title="View" class="btn btn-sm btn-info">
+                        <a href="{{ route('todos.show', $todo->id) }}" title="View" class="btn btn-sm btn-info">
                             View
                         </a>
-                        <a href="{{ route('todos.edit') }}" title="Edit" class="btn btn-sm btn-success">
+                        <a href="{{ route('todos.edit', $todo->id) }}" title="Edit" class="btn btn-sm btn-success">
                             Edit
                         </a>
 
@@ -70,8 +70,8 @@
                 </tr>
             @empty
                 <tr>
-                    <td colspan="4">
-                        <p class="text-danger text-center fw-bold"> No totos found! </p>
+                    <td colspan="5">
+                        <p class="text-danger text-center fw-bold"> No todos found! </p>
                     </td>
                 </tr>
             @endforelse
